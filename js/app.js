@@ -14,7 +14,7 @@ leftImg.addEventListener('click', click1);
 centerImg.addEventListener('click', click1);
 rightImg.addEventListener('click', click1);
 
-button1.addEventListener('click', resultsImg);
+button1.addEventListener('click', votes2);
 
 let counts = 0;
 let maxAttempts = 25;
@@ -111,7 +111,7 @@ function click1(event) {
 }
 
 
-function resultsImg( ) {
+function votes2( ) {
   let ulResults = document.getElementById('ul');
 
   ulResults.innerHTML = '';
