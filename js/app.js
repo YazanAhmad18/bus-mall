@@ -91,11 +91,11 @@ function click1(event) {
 
   if (maxAttempts >= counts) {
 
-    if (event.target.id === 'leftImg') {
+    if (event.target.id === 'leftImage') {
       BusMall.allObject[leftIndex].votes++;
-    } else if (event.target.id === 'centerImg') {
+    } else if (event.target.id === 'centerImage') {
       BusMall.allObject[centerIndex].votes++;
-    } else if (event.target.id === 'rightImg'){
+    } else if (event.target.id === 'rightImage') {
       BusMall.allObject[rightIndex].votes++;
     }
 
