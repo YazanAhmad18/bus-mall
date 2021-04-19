@@ -3,7 +3,7 @@ header {
     display: inline-flex;
     width: 97.7%;    
     padding: 7px 0px;
-    border: 2px solid black;
+    border: 2px solid gray;
 }
 header img {
     padding: 5px;
@@ -11,6 +11,7 @@ header img {
 header h1 {
     font-size: 32px;
     padding: 17px 15px;
+    font-style: italic;
 }
 
 
@@ -26,6 +27,8 @@ header h1 {
     width: 21%;
     padding: 28px;
     font-size: 17px;
+    border: 2px solid gray;
+
 }
 #display h3 {
     padding: 1px;
@@ -56,6 +59,8 @@ header h1 {
     float: right;
     width: 63%;
     padding: 28px;
+    border: 2px solid gray;
+
 
 }
 
@@ -71,6 +76,9 @@ header h1 {
 #text {
     font-size: 18px;
     text-align: justify;
+    margin-right: 16px;
+    position: absolute;
+    top: 420px;
 
 }
 
@@ -80,14 +88,26 @@ footer{
     margin: 1%;
     clear: both;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid gray;
     font-size: 30px;
     font-weight: 600;
 }
-#button {
+#button1 {
     position: absolute;
     top: 90%;
-    left: 33%;
+    left: 20%;
+    display: none;
+    width: 200px;
+    
+    color:white;
+    background: black;
 
+
+
+}
+
+#myChart{
+position: absolute;
+top: 500px;
 
 }
