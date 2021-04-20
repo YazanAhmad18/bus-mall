@@ -94,13 +94,14 @@ footer{
 }
 #button1 {
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 20%;
     display: none;
     width: 200px;
     
     color:white;
     background: black;
+    border-radius: 10%;
 
 
 
