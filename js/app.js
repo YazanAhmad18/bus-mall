@@ -65,6 +65,31 @@ new BusMall('wine-glass', 'images/wine-glass.jpg');
 
 // console.log(BusMall.allObject);
 
+
+
+
+
+function savedata(){
+
+  let localData = JSON.stringify(BusMall.allObject);
+
+  localStorage.setItem('alldata', localData);
+
+}
+
+
+function showsavedData(){
+  let data10 = localStorage.getItem('alldata');
+  let request = JSON.parse(data10);
+
+  if(request !== null){
+    BusMall.allObject = request;
+  }
+ 
+
+}
+
+
 renderimages();
 
 function renderimages() {
@@ -136,6 +161,8 @@ function click1(event) {
     leftImg.removeEventListener('click', click1);
     centerImg.removeEventListener('click', click1);
     rightImg.removeEventListener('click', click1);
+    savedata();
+
     button1.style.display = 'block';
 
  
@@ -191,3 +218,4 @@ function chart() {
     }
   });
 }
+showsavedData();
